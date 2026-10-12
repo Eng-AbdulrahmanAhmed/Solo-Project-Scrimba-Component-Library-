@@ -1,0 +1,45 @@
+h1,h2,span{
+  font-family: 'Permanent Marker', cursive;
+}
+h1,h2{
+  font-weight:400;
+  color:black;
+}
+h1{
+  margin-block:2rem;
+  font-size:2rem
+}
+h2{
+  font-size:1.5rem;
+  color:#5E5D5D;
+}
+.title{
+  color:#5E5D5D;
+  font-size:1.5rem;
+  margin-right:0.5rem;
+  
+  width:6rem;
+  align-self:center;
+}
+/* Badge Styles */
+.squares{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Banner Styles */
+.banner-type-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 1rem;
+  align-items: center;
+}
+.banner-type-title{
+  width:100%;
+  margin-block: 2rem;
+}
