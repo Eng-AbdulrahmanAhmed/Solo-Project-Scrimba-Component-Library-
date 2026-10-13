@@ -43,3 +43,30 @@ h2{
   width:100%;
   margin-block: 2rem;
 }
+/* Card Styles */
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .card:nth-child(2){
+    margin-top: 3rem;
+} */
+.card:nth-child(2)::before{
+    content: "Hover";
+    position: absolute;
+    right: -20%;
+    top:-15%;
+    font-size: 1.5rem;
+    transform: rotate(0.125turn);
+    font-family: 'Permanent Marker', cursive;
+    color: rgba(94, 93, 93, 1);
+}
+
+.card:nth-child(2):hover{
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}

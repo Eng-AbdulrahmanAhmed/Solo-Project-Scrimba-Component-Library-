@@ -7,7 +7,7 @@
     display: flex;
     border-radius: 6px;
     text-align: left;
-    font-size: small;
+    font-size:1rem;
 }
 .banner-content.multi-line span{
     font-size: 0.875rem;

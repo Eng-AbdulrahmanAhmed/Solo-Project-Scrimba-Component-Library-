@@ -40,33 +40,22 @@ function App():JSX.Element {
         <h2 className="banner-type-title">Multi Line</h2>
         <div className="banner-type-container">
           <span className="title">success</span>
-          <Banner variant="multiLine" status="success" title="Success" body="Your changes have been saved successfully." >
-            
-          </Banner>
+          <Banner variant="multiLine" status="success" title="Success" body="Your changes have been saved successfully." ></Banner>
         </div>
         <div className="banner-type-container"> 
           <span className="title">warning</span>
-          <Banner variant="multiLine" status="warning" title="Warning" body="You have a warning." >
-            
-          </Banner>
+          <Banner variant="multiLine" status="warning" title="Warning" body="You have a warning." ></Banner>
         </div>
         <div className="banner-type-container">
           <span className="title">error</span>
-          <Banner variant="multiLine" status="error" title="Error" body="An error occurred while saving your changes." >
-            
-          </Banner>
+          <Banner variant="multiLine" status="error" title="Error" body="An error occurred while saving your changes." ></Banner>
         </div>
         <div className="banner-type-container">
           <span className="title">info</span>
-          <Banner variant="multiLine" status="info" title="info" body="This is a info message." >
-            
-          </Banner>
+          <Banner variant="multiLine" status="info" title="info" body="This is a info message." ></Banner>
         </div>
-
         <h2 className="banner-type-title">Single Line</h2>
-
         <div className="banner-type-container">
-
           <span className="title">success</span>
           <Banner variant="singleLine" status="success" ></Banner>
         </div>
@@ -84,7 +73,10 @@ function App():JSX.Element {
         </div>
       </div>
       <h1>Card</h1>
-      <Card />
+      <div className="card-container">
+        <Card icon="src/assets/react.svg"/>
+        <Card />
+      </div>
       <h1>Testimonial</h1>
       <Testimonial img={reactLogo}/>
       <Testimonial />
