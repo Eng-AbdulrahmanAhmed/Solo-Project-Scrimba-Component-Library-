@@ -1,10 +1,6 @@
 import type React from "react"
-// import { FaQuestionCircle } from "react-icons/fa";
 import "../styles/Card.css"
-// import path from 'path-browserify';
-import reactPng from "../assets/react.svg"
 import { FaSmile } from "react-icons/fa";
-import { LiaSquareSolid } from "react-icons/lia";
 import type { JSX } from "react";
 
 type CardProps = React.HTMLAttributes<HTMLDivElement> & {

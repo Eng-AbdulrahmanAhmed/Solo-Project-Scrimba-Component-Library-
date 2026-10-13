@@ -1,0 +1,77 @@
+:root {
+  --testimonial-width:800px;
+  --testimonial-height:250px
+}
+.testimonial-container{
+    width:var(--testimonial-width);
+    background-color:  rgba(37, 69, 184, 1);
+    margin: 4rem;
+    justify-self: center;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: var(--testimonial-height);
+}
+.testimonial-container img{
+    height: calc(var(--testimonial-height) + 50px);
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    min-width: 250px;
+    border-radius: 6px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.testimonial-content-container::before{
+    content: url("../assets/paste.svg");
+    opacity: 0.5;
+}
+.testimonial-content-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+    color: white;
+    justify-content: end;
+    align-items: flex-start;
+    width: 60%;
+    padding-right: 3rem;
+    text-align: left;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.testimonial-content-container span{
+    font-family: "Inter";
+}
+.testimonial-content-container span:first-of-type{
+    font-weight: 700;
+    display: block;
+}
+@media (max-width:850px) {
+    
+    .testimonial-container img{
+        min-width: 250px;
+        height: 150px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .testimonial-container{
+        height: 400px;
+        width: 300px;
+        justify-content: center;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    .testimonial-content-container{
+        padding-right: 0;
+        padding-bottom: 0;
+        align-items: start;
+        width: 90%;
+    }
+    .testimonial-content-container p {
+        margin-block: 1.5rem;
+    }
+    .span-container{
+        padding-bottom: 1rem;
+    }
+}

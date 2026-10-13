@@ -26,11 +26,13 @@ h2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .pills{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /* Banner Styles */
 .banner-type-container{
@@ -52,21 +54,24 @@ h2{
   flex-wrap: wrap;
 }
 
-/* .card:nth-child(2){
-    margin-top: 3rem;
-} */
 .card:nth-child(2)::before{
-    content: "Hover";
-    position: absolute;
-    right: -20%;
-    top:-15%;
-    font-size: 1.5rem;
-    transform: rotate(0.125turn);
-    font-family: 'Permanent Marker', cursive;
-    color: rgba(94, 93, 93, 1);
+  content: "Hover";
+  position: absolute;
+  right: -20%;
+  top:-15%;
+  font-size: 1.5rem;
+  transform: rotate(0.125turn);
+  font-family: 'Permanent Marker', cursive;
+  color: rgba(94, 93, 93, 1);
 }
 
 .card:nth-child(2):hover{
-    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+/* Testimonial Styles */ 
+@media (max-width:850px) {
+  .testimonial-container:nth-child(1 of .testimonial-container){
+    margin-top: 10rem;
+  }
 }

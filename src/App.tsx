@@ -1,10 +1,11 @@
-import { useState, type JSX } from 'react'
+import { type JSX } from 'react'
 import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
 import reactLogo from './assets/react.svg'
-
+import personImg from "./assets/person.jpg"
+import myImg from "./assets/eVisa.jpeg"
 import './App.css' 
 
 function App():JSX.Element {
@@ -78,7 +79,7 @@ function App():JSX.Element {
         <Card />
       </div>
       <h1>Testimonial</h1>
-      <Testimonial img={reactLogo}/>
+      <Testimonial img={myImg}/>
       <Testimonial />
     </>
   )

@@ -1,21 +1,23 @@
 import React from "react"
-import heroImg from "../assets/hero.png"
-
+// import heroImg from "../assets/hero.png"
+import "../styles/Testimonial.css"
 type TestimonialProps = React.HTMLAttributes<HTMLDivElement> & { 
     img?:string,
 }
 
 export default function Testimonial({img , children , ...props}: TestimonialProps){
+    const classes = `testimonial-container ${img ? "testimonial-with-image" : " "}`
     return(
-        <div className="Testimonial-container" {...props}>
-            <div className="testimonial-image-container">
-                {/* if image is provided take the src if not use default image */}
-                {<img src={img ? img : heroImg} alt="Testimonial" />}
-            </div>
+        <div className={classes} {...props}>
+            {img &&
+                    <img src={img} alt="Testimonial" />
+            }
             <div className="testimonial-content-container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. </p>
-                <span>May Andersons</span>
-                <span>Workcation, CTO</span>
+                <div className="span-container">
+                    <span>May Andersons</span>
+                    <span>Workcation, CTO</span>
+                </div>
             </div>
         </div>
     
