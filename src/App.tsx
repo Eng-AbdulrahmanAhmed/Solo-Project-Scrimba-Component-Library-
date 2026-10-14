@@ -6,6 +6,7 @@ import Testimonial from "./components/Testimonial"
 import reactLogo from './assets/react.svg'
 import personImg from "./assets/person.jpg"
 import myImg from "./assets/eVisa.jpeg"
+import workCation from "./assets/image.png"
 import './App.css' 
 
 function App():JSX.Element {
@@ -80,7 +81,7 @@ function App():JSX.Element {
       </div>
       <h1>Testimonial</h1>
       <Testimonial img={myImg}/>
-      <Testimonial />
+      <Testimonial icon={workCation}/>
     </>
   )
 }
